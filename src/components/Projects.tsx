@@ -23,7 +23,7 @@ const projects = [
     image: "/projects/replydex.png",
     live: "https://replydex.vercel.app",
     github: "https://github.com/sush8471/flydex-reviews",
-    tag: null,
+    tag: "AI Engine",
   },
   {
     title: "Flydexify",
