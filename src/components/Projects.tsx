@@ -8,12 +8,22 @@ import { Card } from "@/components/ui/card";
 
 const projects = [
   {
+    title: "ResumeDEX",
+    description:
+      "AI-powered resume optimization tool. Optimize your resume for ATS systems in seconds and 10x your interview chances.",
+    image: "/projects/resumedex.png",
+    live: "https://resumedex.vercel.app",
+    github: "https://github.com/sush8471/ResumeDEX",
+    tag: "New",
+  },
+  {
     title: "ReplyDEX",
-    description: "Professional AI engine for review management. Automate customer interactions with context-aware, personalized responses.",
+    description:
+      "Professional AI engine for review management. Automate customer interactions with context-aware, personalized responses.",
     image: "/projects/replydex.png",
     live: "https://replydex.vercel.app",
     github: "https://github.com/sush8471/flydex-reviews",
-    tag: "New"
+    tag: null,
   },
   {
     title: "Flydexify",
@@ -21,7 +31,7 @@ const projects = [
     image: "/projects/flydexify.png",
     live: "https://flydexify.vercel.app",
     github: "https://github.com/sush8471/flydexify",
-    tag: null
+    tag: null,
   },
   {
     title: "FlydexGPT",
@@ -29,7 +39,7 @@ const projects = [
     image: "/projects/flydexgpt.png",
     live: "https://flydexgpt.vercel.app",
     github: "https://github.com/sush8471/flydexgpt",
-    tag: null
+    tag: null,
   },
   {
     title: "Flydex Calories",
@@ -37,7 +47,7 @@ const projects = [
     image: "/projects/calories.png",
     live: "https://flydex-nutrients-analyzer.vercel.app",
     github: "https://github.com/sush8471/flydex-nutrients-analyzer",
-    tag: null
+    tag: null,
   },
   {
     title: "Flydon Automations",
@@ -45,16 +55,19 @@ const projects = [
     image: "/projects/flydon.png",
     live: "https://flydon-dashboard.vercel.app",
     github: "https://github.com/sush8471/flydon-dashboard",
-    tag: null
-  }
+    tag: null,
+  },
 ];
 
 export default function Projects() {
   return (
-    <section className="py-20 lg:py-32 bg-background relative overflow-hidden" id="projects">
+    <section
+      className="py-20 lg:py-32 bg-background relative overflow-hidden"
+      id="projects"
+    >
       {/* Subtle background glow */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[128px] -translate-y-1/2 pointer-events-none" />
-      
+
       <div className="container px-5 sm:px-6 max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +80,8 @@ export default function Projects() {
             Featured <span className="text-primary">Projects</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl">
-            A collection of tools I've built while exploring automations, web apps, and lightweight AI utilities.
+            A collection of tools I've built while exploring automations, web
+            apps, and lightweight AI utilities.
           </p>
         </motion.div>
 
@@ -93,7 +107,7 @@ export default function Projects() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="75vw"
                     />
-                    
+
                     {/* Overlay gradient */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
 
@@ -113,9 +127,9 @@ export default function Projects() {
                       <h3 className="text-lg font-bold text-white font-serif tracking-wide group-hover:text-primary transition-colors duration-300">
                         {project.title}
                       </h3>
-                      
+
                       <div className="flex gap-1.5 flex-shrink-0">
-                        <Link 
+                        <Link
                           href={project.github}
                           target="_blank"
                           className="p-1.5 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all duration-300"
@@ -123,7 +137,7 @@ export default function Projects() {
                         >
                           <Github className="w-3.5 h-3.5" />
                         </Link>
-                        <Link 
+                        <Link
                           href={project.live}
                           target="_blank"
                           className="p-1.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
@@ -133,7 +147,7 @@ export default function Projects() {
                         </Link>
                       </div>
                     </div>
-                    
+
                     <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
                       {project.description}
                     </p>
@@ -164,7 +178,7 @@ export default function Projects() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 1024px) 50vw, 33vw"
                   />
-                  
+
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
 
@@ -184,9 +198,9 @@ export default function Projects() {
                     <h3 className="text-lg lg:text-xl font-bold text-white font-serif tracking-wide group-hover:text-primary transition-colors duration-300">
                       {project.title}
                     </h3>
-                    
+
                     <div className="flex gap-2 flex-shrink-0">
-                      <Link 
+                      <Link
                         href={project.github}
                         target="_blank"
                         className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all duration-300"
@@ -194,7 +208,7 @@ export default function Projects() {
                       >
                         <Github className="w-4 h-4" />
                       </Link>
-                      <Link 
+                      <Link
                         href={project.live}
                         target="_blank"
                         className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
@@ -204,7 +218,7 @@ export default function Projects() {
                       </Link>
                     </div>
                   </div>
-                  
+
                   <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
                     {project.description}
                   </p>
